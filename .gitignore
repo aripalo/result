@@ -1,0 +1,47 @@
+# Binaries for programs and plugins
+
+_.exe
+_.exe~
+_.dll
+_.so
+\*.dylib
+
+# Test binary, build with `go test -c`
+
+\*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+
+\*.out
+.DS_Store
+
+# Environment variable setup batch files
+
+/src/env.bat
+/src/env.sh
+/src/app.sh
+
+# gin created files
+
+gin-bin
+/node_modules
+/dist
+src/github.com
+
+# Some random bash files...
+
+export.sh
+run.sh
+
+node_modules
+
+**/\*.js
+**/\*.d.ts
+
+/bin
+/dist
+/tmp
+**/\*/bin
+**/\*/dist
+version.txt
+/.idea

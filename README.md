@@ -4,32 +4,6 @@
 
 <br/>
 
-> _“There are many like it, but this one is mine.”_
-
-Writing asynchronous code with `async`/`await` looks simple, but once procedural code that depends on the output of previous async steps is being introduced with bit more complex error handling requirements, things start to become complex from control flow perspective. There are many good alternative solutions to this; This one just happens to be the solution I personally prefer:
-
-1. Go-inspired, error as return value
-
-2. Returned error is always an instance of `Error`
-
-3. Return value (type `Maybe`) is a Tuple with either value or error present and the other always set to `null`:
-
-   ```ts
-   type Maybe<T> = [value: T, err: null] | [value: null, err: Error];
-   ```
-
-4. Data absence protection: By default, values that resolve to `undefined` or `null` will internally thrown an error, resulting into:
-
-   ```ts
-   [value: null, err: Error]
-   ```
-
-5. Primarily aimed for `async` functions and Promise objects, but works with synchronous functions too: Anything that is _throwable_, i.e. "can throw/reject".
-
-6. Works both in NodeJS and Browser environments
-
-<br/>
-
 ## Getting started
 
 ### Install
@@ -66,6 +40,36 @@ if (err) {
   assert(err === null); // true
 }
 ```
+
+<br/>
+
+## Purpose
+
+> _“There are many like it, but this one is mine.”_
+
+Writing asynchronous code with `async`/`await` looks simple, but once procedural code that depends on the output of previous async steps is being introduced with bit more complex error handling requirements, things start to become complex from control flow perspective.
+
+**There are many great alternative solutions to this problem; This one just happens to be the pattern I personally prefer to use.**
+
+1. Go-inspired, error as return value
+
+2. Returned error is always an instance of `Error`
+
+3. Return value (type `Maybe`) is a Tuple with either value or error present and the other always set to `null`:
+
+   ```ts
+   type Maybe<T> = [value: T, err: null] | [value: null, err: Error];
+   ```
+
+4. Data absence protection: By default, values that resolve to `undefined` or `null` will internally thrown an error, resulting into:
+
+   ```ts
+   [value: null, err: Error]
+   ```
+
+5. Primarily aimed for `async` functions and Promise objects, but works with synchronous functions too: Anything that is _throwable_, i.e. "can throw/reject".
+
+6. Works both in NodeJS and Browser environments
 
 <br/>
 
