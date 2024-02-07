@@ -28,7 +28,7 @@ async function randomErrorHelloWorld(): Promise<string> {
 ### Usage
 
 ```ts
-import Result from "@aripalo/result";
+import { Result } from "@aripalo/result";
 
 const [value, err] = await Result(randomErrorHelloWorld());
 
