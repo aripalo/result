@@ -1,6 +1,6 @@
 # `@aripalo/result`
 
-**Typesafe error handling (inspired by Go) & data absence protection for TypeScript apps (NodeJS or Browser).**
+**Typesafe error handling (inspired by Go) & data absence protection for TypeScript apps** (NodeJS/Browser).
 
 <br/>
 
