@@ -1,6 +1,6 @@
 {
 	"name": "@aripalo/result",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Typesafe error handling (inspired by Go) and data absence protection.",
 	"main": "index.ts",
 	"scripts": {
