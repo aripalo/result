@@ -42,7 +42,7 @@ const defaultOptions: ResultOptions = {
  * @returns Tuple containing either `[value, null]` or `[null, err]`
  * @author Ari Palo
  */
-export async function Result<T extends Promise<unknown> | unknown>(
+export async function result<T extends Promise<unknown> | unknown>(
 	throwable: T,
 	options: ResultOptions = {},
 ): Promise<Maybe<Awaited<T>>> {
@@ -63,4 +63,10 @@ export async function Result<T extends Promise<unknown> | unknown>(
 	}
 }
 
-export default Result;
+/**
+ * @deprecated Use the lowercase `result` instead. The `Result` alias is kept
+ * for backwards compatibility and may be removed in 2.0.
+ */
+export const Result = result;
+
+export default result;
