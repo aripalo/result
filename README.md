@@ -28,9 +28,9 @@ async function randomErrorHelloWorld(): Promise<string> {
 ### Usage
 
 ```ts
-import { Result } from "@aripalo/result";
+import { result } from "@aripalo/result";
 
-const [value, err] = await Result(randomErrorHelloWorld());
+const [value, err] = await result(randomErrorHelloWorld());
 
 if (err) {
   assert(value === null); // true
@@ -40,6 +40,11 @@ if (err) {
   assert(err === null); // true
 }
 ```
+
+> [!NOTE]
+> The capitalized `Result` is still exported as a deprecated alias of `result`
+> for backwards compatibility. It will be removed in `2.0` — prefer the
+> lowercase `result` going forward.
 
 <br/>
 
@@ -78,7 +83,7 @@ Writing asynchronous code with `async`/`await` looks simple, but once procedural
 ### Receive both
 
 ```ts
-const [value, err] = await Result(randomErrorHelloWorld());
+const [value, err] = await result(randomErrorHelloWorld());
 
 if (err) {
   // handle err, for example return early
@@ -93,7 +98,7 @@ if (err) {
 If you're only interested in "did the operation succeed", without caring about the return value:
 
 ```ts
-const [, err] = await Result(randomErrorHelloWorld());
+const [, err] = await result(randomErrorHelloWorld());
 
 if (err) {
   // handle err
@@ -105,7 +110,7 @@ if (err) {
 When you don't really care if the operation fails, but if it succeeded do something with the return value:
 
 ```ts
-const [value] = await Result(randomErrorHelloWorld());
+const [value] = await result(randomErrorHelloWorld());
 
 if (value) {
   // do something with value
@@ -117,7 +122,7 @@ if (value) {
 If your _throwable_ returns/resolves without _meaningful_ data on success, you may specify `meaningful: false` to prevent the data absence protection:
 
 ```ts
-const [value, err] = await Result(Promise.resolve(undefined), {
+const [value, err] = await result(Promise.resolve(undefined), {
   meaningful: false,
 });
 
