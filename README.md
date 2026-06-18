@@ -2,8 +2,6 @@
 
 **Typesafe error handling (inspired by Go) & data absence protection for TypeScript apps** (NodeJS/Browser).
 
-🚧 Should work, but all of this is still a bit "work-in-progress"!
-
 <br/>
 
 ## Getting started
