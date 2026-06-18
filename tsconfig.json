@@ -9,5 +9,10 @@
 		"forceConsistentCasingInFileNames": true,
 		"types": ["vitest/globals"]
 	},
-	"include": ["index.ts", "ensure-error.ts", "tests/**/*.ts", "vitest.config.ts"]
+	"include": [
+		"src/**/*.ts",
+		"tests/**/*.ts",
+		"vitest.config.ts",
+		"tsdown.config.ts"
+	]
 }

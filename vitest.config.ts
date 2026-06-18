@@ -6,7 +6,7 @@ export default defineConfig({
 		include: ["tests/**/*.test.ts"],
 		coverage: {
 			provider: "v8",
-			include: ["index.ts", "ensure-error.ts"],
+			include: ["src/**/*.ts"],
 			reporter: ["text", "html"],
 			thresholds: {
 				lines: 100,
