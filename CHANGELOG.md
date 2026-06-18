@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/aripalo/result/compare/v0.2.1...v1.0.0) (2026-06-18)
+
+
+### Features
+
+* ship compiled js files (together with d.ts and source maps) ([8397c9d](https://github.com/aripalo/result/commit/8397c9d466845987c1fe106579a2091ea422dd64))
+
+
+### BREAKING CHANGES
+
+* No more ts-only files
+
 ## [0.2.1](https://github.com/aripalo/result/compare/v0.2.0...v0.2.1) (2026-06-18)
 
 
