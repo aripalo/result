@@ -45,3 +45,5 @@ node_modules
 **/\*/dist
 version.txt
 /.idea
+
+coverage/

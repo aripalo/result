@@ -1,20 +1,41 @@
 {
 	"name": "@aripalo/result",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Typesafe error handling (inspired by Go) and data absence protection.",
 	"main": "index.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"coverage": "vitest run --coverage"
 	},
-	"keywords": ["error handling", "data absence protection"],
+	"keywords": [
+		"error handling",
+		"data absence protection"
+	],
 	"author": {
 		"name": "Ari Palo",
 		"email": "opensource@aripalo.com",
 		"organization": false
 	},
 	"license": "Apache-2.0",
+	"engines": {
+		"node": ">=20"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "^24.0.0",
+			"onFail": "error"
+		}
+	},
 	"devDependencies": {
-		"@types/node": "^20.11.16",
-		"typescript": "^5.3.3"
-	}
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/git": "^10.0.1",
+		"@types/node": "^24.13.2",
+		"@vitest/coverage-v8": "^4.1.9",
+		"semantic-release": "^24.2.0",
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.9"
+	},
+	"packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620"
 }
