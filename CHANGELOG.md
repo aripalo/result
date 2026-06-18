@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/aripalo/result/compare/v0.2.0...v0.2.1) (2026-06-18)
+
+
+### Bug Fixes
+
+* add missing urls so npm provenance works ([c58b07f](https://github.com/aripalo/result/commit/c58b07f3196153cf1ed54f3690cc0edee0bcf421))
+
 # [0.2.0](https://github.com/aripalo/result/compare/v0.1.0...v0.2.0) (2026-06-18)
 
 
