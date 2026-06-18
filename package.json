@@ -30,6 +30,7 @@
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/exec": "^7.0.3",
 		"@semantic-release/git": "^10.0.1",
 		"@types/node": "^24.13.2",
 		"@vitest/coverage-v8": "^4.1.9",
