@@ -1,4 +1,4 @@
-import Result, { Result as NamedResult } from "../index";
+import Result, { Result as NamedResult } from "../src/index";
 
 describe("Result", () => {
 	test("exposes the same function as default and named export", () => {

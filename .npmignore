@@ -1,0 +1,35 @@
+# Source
+src/
+tests/
+tsconfig.json
+tsdown.config.ts
+vitest.config.ts
+
+# Release / repo tooling
+.releaserc.json
+.nvmrc
+.editorconfig
+.gitignore
+
+# CI
+.github/
+
+# AI / agent assistants
+.claude/
+.agents/
+CLAUDE.md
+AGENTS.md
+
+# Coverage / test artifacts
+coverage/
+.nyc_output/
+
+# Lockfiles (consumers resolve their own)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+bun.lockb
+
+# Misc
+*.log
+.DS_Store

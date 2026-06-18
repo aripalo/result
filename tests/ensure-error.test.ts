@@ -1,4 +1,4 @@
-import ensureError from "../ensure-error";
+import ensureError from "../src/ensure-error";
 
 describe("ensureError", () => {
 	test("wraps non-Error input into a NonError", () => {
