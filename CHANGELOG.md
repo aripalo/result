@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/aripalo/result/compare/v1.0.0...v1.1.0) (2026-06-18)
+
+
+### Features
+
+* default to "result" but keep "Result" for backward compat ([9e2c7f4](https://github.com/aripalo/result/commit/9e2c7f43c290ad19a64c8b0755aaecbc5bee33ab))
+
 # [1.0.0](https://github.com/aripalo/result/compare/v0.2.1...v1.0.0) (2026-06-18)
 
 
