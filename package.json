@@ -19,7 +19,14 @@
 	},
 	"license": "Apache-2.0",
 	"engines": {
-		"node": "^24.0.0"
+		"node": ">=20"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "^24.0.0",
+			"onFail": "error"
+		}
 	},
 	"devDependencies": {
 		"@types/node": "^24.13.2",
